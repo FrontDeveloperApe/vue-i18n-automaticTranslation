@@ -47,6 +47,6 @@
   ],
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "git+https://github.com/FrontDeveloperApe/vue-i18n-automaticTranslation.git"
   }
 }
