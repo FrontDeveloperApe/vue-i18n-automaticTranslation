@@ -1,0 +1,52 @@
+{
+  "name": "vue-i18n-automatic-translation",
+  "version": "1.0.0",
+  "description": "Scan Chinese text in Vue projects, wrap with $t(), and auto-translate locale JSON files. Configure via vite.config i18nAuto.",
+  "type": "module",
+  "license": "MIT",
+  "bin": {
+    "i18n-auto": "./bin/i18n-auto.mjs"
+  },
+  "main": "./src/index.mjs",
+  "exports": {
+    ".": "./src/index.mjs"
+  },
+  "types": "./i18n-auto.d.ts",
+  "files": [
+    "bin",
+    "src",
+    "i18n-auto.d.ts",
+    "README.md",
+    "README.zh-CN.md"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "i18n-auto": "node ./bin/i18n-auto.mjs"
+  },
+  "dependencies": {
+    "@vue/compiler-sfc": "^3.5.0",
+    "google-translate-api-x": "^10.7.3"
+  },
+  "peerDependencies": {
+    "vite": ">=4"
+  },
+  "peerDependenciesMeta": {
+    "vite": {
+      "optional": true
+    }
+  },
+  "keywords": [
+    "i18n",
+    "vue",
+    "vue-i18n",
+    "translation",
+    "chinese",
+    "vite"
+  ],
+  "repository": {
+    "type": "git",
+    "url": ""
+  }
+}
